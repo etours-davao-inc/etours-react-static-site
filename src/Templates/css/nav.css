@@ -1,0 +1,18 @@
+/* Extra small devices (portrait phones, less than 576px) */
+.nav-link i {
+  font-size: 1.1em;
+}
+.nav-link,.nav-link:hover, .nav-link:visited   {
+  color:#34ace0;
+}
+
+.dropdown-toggle::after {
+  display: none;
+}
+
+.dropdown-menu a {
+  font-family: 'Gotham Bold',Impact, 'Haettenschweiler', 'Arial Narrow Bold', sans-serif;
+  font-size: 1.4rem;
+  color: gray;
+  padding: 1rem;
+}

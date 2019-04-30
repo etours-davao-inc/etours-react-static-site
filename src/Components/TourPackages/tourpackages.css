@@ -1,0 +1,50 @@
+/* Extra small devices (portrait phones, less than 576px) */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #636e72;
+}
+
+.responsive-widths {
+  width:99%;
+  margin: 0 auto;
+}
+
+.tourpackage_thumbnail {
+  width: 75px;
+  height: 75px;
+}
+
+.tourpackage-name {
+  color: #cd6133
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {  
+  .responsive-widths  {
+    width:99%;
+    margin: 0 auto;
+  }
+  .tourpackage_thumbnail {
+    width: 125px;
+    height: 125px;
+  }
+
+}
+
+/* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
+@media (min-width: 768px) {  
+
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+  .responsive-widths  {
+    width:65%;
+  }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {  
+}
+
+

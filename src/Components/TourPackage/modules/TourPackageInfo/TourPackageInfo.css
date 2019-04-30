@@ -1,0 +1,39 @@
+.tourpackage_info_wrapper {
+  background-color: white;
+  border-radius: 4px;
+  padding: 10px;
+}
+
+#tourpackage_banner {
+  width:100%;
+  border-radius: 3px;
+}
+
+#tourpackage_title {
+  font-family: 'Gotham Bold',Impact, 'Haettenschweiler', 'Arial Narrow Bold', sans-serif;
+  color: #D35400;
+  font-size: 2rem;
+  padding: 1rem 0;
+}
+
+#tourpackage_code_duration {
+  font-size: 1.8rem;
+}
+
+#tourpackage_description {
+  font-size: 1.2rem;
+  padding: 1rem 0;
+}
+
+#tourpackage_info_wrapper  {
+  font-size: 1.1rem;
+}
+
+#tourpackage_info_wrapper h3 {
+  color: #d35400;
+  font-size: 1.2em;
+}
+
+#tourpackage_info_wrapper li {
+  margin-bottom: .3em;
+}

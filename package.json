@@ -1,0 +1,37 @@
+{
+  "name": "react-static-example-basic",
+  "version": "1.0.1",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "react-static start",
+    "stage": "react-static build --staging",
+    "build": "react-static build",
+    "serve": "serve dist -p 3000"
+  },
+  "dependencies": {
+    "axios": "^0.18.0",
+    "cloudinary-react": "^1.1.0",
+    "date-fns": "^1.30.1",
+    "firebase-etours-booking-crud": "/Users/t0mclaudio/Projects/firebase-etours-booking-crud",
+    "price-compute-js": "/Users/t0mclaudio/Projects/total-price-calculator",
+    "react": "^16.0.0",
+    "react-currency-formatter": "^1.1.0",
+    "react-day-picker": "^7.3.0",
+    "react-dom": "^16.0.0",
+    "react-hot-loader": "^4.3.5",
+    "react-responsive": "^6.1.1",
+    "react-router": "^5.0.0",
+    "react-slick": "^0.23.2",
+    "react-static": "^6.3.6",
+    "slick-carousel": "^1.8.1",
+    "styled-components": "^4.1.3",
+    "tour-dates-utility": "/Users/t0mclaudio/Projects/tour-dates-utility",
+    "validator": "^10.11.0"
+  },
+  "devDependencies": {
+    "eslint-config-react-tools": "1.x.x",
+    "firebase": "^5.9.1",
+    "serve": "^10.1.2"
+  }
+}
