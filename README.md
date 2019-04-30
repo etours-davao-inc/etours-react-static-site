@@ -1,9 +1,3 @@
-# React-Static - Blank Example
+# Etours React-Static Website
 
-This example is a blank version of react-static. It includes::
-- Babel
-- CSS imports
-- Image imports
-- File imports
-
-To get started, run `react-static create` and use the `blank` template.
+This version of the webiste is implemented in React-Static V6
