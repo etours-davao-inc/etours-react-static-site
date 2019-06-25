@@ -11,7 +11,9 @@ class App extends Component {
     return (
       <Root>
         <Header />
-        <Routes />
+        <React.Suspense fallback={<em>Loading...</em>}>
+          <Routes />
+        </React.Suspense>
         <Footer />
       </Root>
     );
