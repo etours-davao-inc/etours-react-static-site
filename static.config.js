@@ -1,4 +1,5 @@
 import React from 'react';
+import path from 'path'
 
 export default {
   // siteRoot: 'https://www.etours.ph',
@@ -13,7 +14,7 @@ export default {
         }),
         children: tourpackages.map(tourpackage => ({
           path: `/davao-philippines-tour-packages-2018/${tourpackage.slug}`,
-          component: 'src/Components/TourPackage',
+          template: 'src/Components/TourPackage',
           getData: () => ({
             tourpackage
           })
@@ -45,5 +46,15 @@ export default {
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossOrigin="anonymous"></script>
       </Body>
     </Html>    
-  )
+  ),
+  plugins: [
+    [
+      require.resolve('react-static-plugin-source-filesystem'),
+      {
+        location: path.resolve('./src/pages'),
+      },
+    ],
+    require.resolve('react-static-plugin-reach-router'),
+    require.resolve('react-static-plugin-sitemap'),
+  ],
 }
