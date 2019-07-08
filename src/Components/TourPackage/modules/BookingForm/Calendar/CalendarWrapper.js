@@ -78,11 +78,11 @@ export default styled.section`
   }
 
   .DayPicker-NavButton--prev::after {
-    content: "\00ab";
+    content: "<";
   }
 
   .DayPicker-NavButton--next::after {
-    content: "\00bb";
+    content: ">";
   }
 
   .DayPicker-Caption div {
