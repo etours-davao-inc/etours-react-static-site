@@ -34,7 +34,6 @@ const ComputationWrapper = styled.section`
   .computationTotalBalance {
     grid-column-start: 1;
     grid-column-end: 4;
-    text-align: right;
   }    
 `
 
