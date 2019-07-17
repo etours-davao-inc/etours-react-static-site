@@ -25,15 +25,12 @@ const Header = props => {
                 <div className="dropdown-menu align-right w-100">
                     <div className="w99n75">
                     <div className="text-center">
-                        <i className="fas fa-phone-square fa-2x mt-2" style={{color:'#0be881'}}></i>
-                        <p className="mb-0">+63 (02) 938 6372 (Manila)</p>
-                        <p>+63 (082) 284-1760 (Davao)</p>
                         <div className="social mt-2">
-                        <span href="#"><i className="fab fa-viber fa-2x" style={{color: '#8e44ad'}}></i></span>
-                        <span href="#"><i className="fab fa-whatsapp fa-2x" style={{color: '#27ae60'}}></i></span>
+                        <span href="#"><i className="fas fa-phone-square fa-2x p-1" style={{color:'#0be881'}}></i></span>
+                        <span href="#"><i className="fab fa-viber fa-2x p-1" style={{color: '#8e44ad'}}></i></span>
+                        <span href="#"><i className="fab fa-whatsapp fa-2x p-1" style={{color: '#27ae60'}}></i></span>
                         </div>
                         <p className="mb-0">+63 (977) 834 4716 (Globe)</p>
-                        <p>+63 (922) 867 4779 (Sun)</p>
                         <i className="fab fa-facebook fa-2x" style={{color: '#0652DD'}}></i>
                         <p>www.facebook.com/etours</p>
                         <i className="fab fa-instagram fa-2x" style={{color: '#ED4C67'}}></i>
