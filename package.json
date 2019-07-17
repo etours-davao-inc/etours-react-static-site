@@ -13,8 +13,8 @@
     "axios": "^0.19.0",
     "cloudinary-react": "^1.1.1",
     "date-fns": "^1.30.1",
-    "firebase-etours-booking-crud": "/Users/t0mclaudio/Documents/Projects/firebase-etours-booking-crud",
-    "price-compute-js": "/Users/t0mclaudio/Documents/Projects/total-price-calculator",
+    "firebase-etours-booking-crud": "/Users/t0mclaudio/Documents/Projects/etours-website/firebase-etours-booking-crud",
+    "price-compute-js": "/Users/t0mclaudio/Documents/Projects/etours-website/total-price-calculator",
     "react": "^16.8.6",
     "react-currency-formatter": "^1.1.0",
     "react-day-picker": "^7.3.0",
@@ -29,7 +29,7 @@
     "react-static-plugin-source-filesystem": "^7.1.0",
     "slick-carousel": "^1.8.1",
     "styled-components": "^4.3.2",
-    "tour-dates-utility": "/Users/t0mclaudio/Documents/Projects/tour-dates-utility",
+    "tour-dates-utility": "/Users/t0mclaudio/Documents/Projects/etours-website/tour-dates-utility",
     "validator": "^11.0.0"
   },
   "devDependencies": {
