@@ -146,7 +146,9 @@ export class Provider extends Component {
     let termsAccepted = this.state.termsAccepted
     if (e.target.name == "terms") {
       termsAccepted = !termsAccepted
-    } 
+    } else {
+      userInput[e.target.name] = (e.target.value) 
+    }
     
     let RFValid = this.isvalidRF(userInput, termsAccepted)
     this.setState({
