@@ -5,7 +5,10 @@ export default {
   // siteRoot: 'https://www.etours.ph',
   minLoadTime: 2000,
   getRoutes: async () => {
-    const tourpackages = require('./data.json')
+    var tourpackages = require('./data.json')
+    tourpackages = tourpackages.sort((a,b) => {
+      return a.total_hours - b.total_hours
+    })
     return [
       {
         path: '/',
