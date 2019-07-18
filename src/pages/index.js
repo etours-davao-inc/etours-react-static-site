@@ -21,8 +21,8 @@ export default withRouteData(props => {
       <span>
         <Banner text={data.Header.bannerText} />
         <ResponsiveWidth>
-          <Services data={data} />
           <TourPackages data={props.tourpackages} settings={data} />
+          <Services data={data} />
           <Values data={data.Values} />
           <About />
         </ResponsiveWidth>
