@@ -31,7 +31,7 @@ const BannerImage = styled.div`
 const PackageName = styled.h3`
   color: #ff9f43;
   font-family: 'Gotham Bold',Impact, 'Haettenschweiler', 'Arial Narrow Bold', sans-serif;
-  font-size: 1.4em;
+  font-size: 1.1em;
 `
 
 const PriceWrapper = styled.div`
@@ -39,14 +39,14 @@ const PriceWrapper = styled.div`
   flex-direction: row;
   justify-content: space-between;
   width: 100%;
-  line-height: 1.3rem;
+  line-height: 1.1rem;
 `
 const Price = styled.span`
   ::before {
     content: "Php ";
   }
   font-family: 'Gotham Bold',Impact, 'Haettenschweiler', 'Arial Narrow Bold', sans-serif;
-  font-size: 1.3rem;
+  font-size: 1.1rem;
   color: #2ecc71;
 `
 const Ribbon = styled.div`
