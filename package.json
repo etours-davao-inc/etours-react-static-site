@@ -14,6 +14,7 @@
     "cloudinary-react": "^1.1.1",
     "date-fns": "^1.30.1",
     "firebase-etours-booking-crud": "/Users/t0mclaudio/Documents/Projects/etours-website/firebase-etours-booking-crud",
+    "numeral": "^2.0.6",
     "price-compute-js": "/Users/t0mclaudio/Documents/Projects/etours-website/total-price-calculator",
     "react": "^16.8.6",
     "react-currency-formatter": "^1.1.0",
