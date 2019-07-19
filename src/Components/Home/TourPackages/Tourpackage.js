@@ -5,18 +5,6 @@ import { Link } from '@reach/router';
 import { urlPrefix } from '../../../../data';
 
 const LinkWrap = styled.span`
-  a {
-    color:#636e72;
-  }
-  a:hover {
-    color:#636e72;
-    text-decoration: none;
-    background-color: bisque;
-  }
-  a:visited {
-    color:#636e72;
-  }
-
   position: relative;
 `
 
@@ -91,17 +79,25 @@ export default (props) => {
   let ribbonColor = isMultiDayTour ? "#e74c3c":"#9b59b6";
   return (
     <LinkWrap>
-      <Link key={props.item.code} to={`/${urlPrefix}/${props.item.slug}`} className="d-block shadow mx-1 rounded tourpackage-link bg-white">
+      <div className="d-block mx-1 rounded tourpackage-link bg-white">
         <Ribbon ribbonColor={ribbonColor}><span>{props.item.duration_text}</span></Ribbon>
         <BannerImage img={image} />
-        <div className="p-2 d-flex flex-wrap align-content-between" style={{ minHeight: '135px' }}>
+        <div className="p-2 d-flex flex-wrap align-content-between" style={{ minHeight: '115px' }}>
           <PackageName className="dragon-skin">{props.item.name}</PackageName>
           <PriceWrapper>
-            <span>Price starts from</span>
-            <Price>{props.item.price_starts}</Price>
+            <div>
+              <p class="p-0 m-0"><small>Price starts from</small></p>
+              <Price>{props.item.price_starts}</Price>
+            </div>
+            <div>
+              <Link key={props.item.code} to={`/${urlPrefix}/${props.item.slug}`} className="btn btn-outline-info align-right btn-sm">
+              View details</Link>
+            </div>
+          
           </PriceWrapper>
+
         </div>
-      </Link>
+      </div>
     </LinkWrap>
   )
 };
