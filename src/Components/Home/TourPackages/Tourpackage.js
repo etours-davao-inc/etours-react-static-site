@@ -70,7 +70,7 @@ const Ribbon = styled.div`
     display: block;
     width: 225px;
     padding: 15px 0;
-    background-color: #2ecc71;
+    background-color: ${props => props.ribbonColor};
     box-shadow: 0 5px 10px rgba(0,0,0,.1);
     color: #fff;
     font: 700 18px/1 'Lato', sans-serif;
@@ -87,11 +87,12 @@ const Ribbon = styled.div`
 
 export default (props) => {
   let image = `url(http://res.cloudinary.com/etours-davao-inc/image/upload/w_288/${props.item.photo})`
+  let isMultiDayTour = props.item.type === "multiday";
+  let ribbonColor = isMultiDayTour ? "#e74c3c":"#9b59b6";
   return (
     <LinkWrap>
       <Link key={props.item.code} to={`/${urlPrefix}/${props.item.slug}`} className="d-block shadow mx-1 rounded tourpackage-link bg-white">
-
-        <Ribbon><span>{props.item.duration_text}</span></Ribbon>
+        <Ribbon ribbonColor={ribbonColor}><span>{props.item.duration_text}</span></Ribbon>
         <BannerImage img={image} />
         <div className="p-2 d-flex flex-wrap align-content-between" style={{ minHeight: '135px' }}>
           <PackageName className="dragon-skin">{props.item.name}</PackageName>
