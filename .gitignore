@@ -40,3 +40,4 @@ yarn-error.log*
 legacy-modules/
 artifacts/
 data.json
+data.js
