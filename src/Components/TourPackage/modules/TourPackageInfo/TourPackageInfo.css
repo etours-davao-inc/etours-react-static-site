@@ -17,23 +17,23 @@
 }
 
 #tourpackage_code_duration {
-  font-size: 1.8rem;
+  font-size: 1rem;
 }
 
 #tourpackage_description {
-  font-size: 1.2rem;
+  font-size: 1rem;
   padding: 1rem 0;
 }
 
 #tourpackage_info_wrapper  {
-  font-size: 1.1rem;
+  font-size: 1rem;
 }
 
 #tourpackage_info_wrapper h3 {
   color: #d35400;
-  font-size: 1.2em;
+  font-size: 1em;
 }
 
 #tourpackage_info_wrapper li {
-  margin-bottom: .3em;
+  margin-bottom: .2em;
 }
