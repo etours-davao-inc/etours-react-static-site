@@ -89,7 +89,7 @@ export default (props) => {
           <PackageName className="dragon-skin">{props.item.name}</PackageName>
           <PriceWrapper>
             <div>
-              <p class="p-0 m-0"><small>Price starts from</small></p>
+              <p className="p-0 m-0"><small>Price starts from</small></p>
               <Price>{numeral(props.item.price_starts).format('0,0')}</Price>
             </div>
             <div>
