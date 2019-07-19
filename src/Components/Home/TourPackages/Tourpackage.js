@@ -1,7 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
 
-import { Link } from '@reach/router'
+import { Link } from '@reach/router';
+import { urlPrefix } from '../../../../data';
 
 const LinkWrap = styled.span`
   a {
@@ -88,7 +89,7 @@ export default (props) => {
   let image = `url(http://res.cloudinary.com/etours-davao-inc/image/upload/w_288/${props.item.photo})`
   return (
     <LinkWrap>
-      <Link key={props.item.code} to={`/davao-philippines-tour-packages-2018/${props.item.slug}`} className="d-block shadow mx-1 rounded tourpackage-link bg-white">
+      <Link key={props.item.code} to={`/${urlPrefix}/${props.item.slug}`} className="d-block shadow mx-1 rounded tourpackage-link bg-white">
 
         <Ribbon><span>{props.item.duration_text}</span></Ribbon>
         <BannerImage img={image} />

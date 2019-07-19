@@ -2,6 +2,8 @@ import React from 'react';
 import styled from 'styled-components';
 import { Link } from '@reach/router';
 
+import { urlPrefix } from '../../../data';
+
 const H3 = styled.h3`
   font-family: 'Gotham Bold',Impact, 'Haettenschweiler', 'Arial Narrow Bold', sans-serif;
   font-size: 2rem;
@@ -60,7 +62,7 @@ export default (props) => {
         <Duration>{props.data.duration_text}</Duration>
         <Description>{props.data.description}</Description>
         <FooterWrap>
-          <Link to={`/davao-philippines-tour-packages-2018/${props.data.slug}`} className="btn btn-warning">View details</Link>
+          <Link to={`/${urlPrefix}/${props.data.slug}`} className="btn btn-warning">View details</Link>
           <PriceWrapper>
             <PriceStarts>Price starts from</PriceStarts>
             <Price>{props.data.price_starts}</Price>
