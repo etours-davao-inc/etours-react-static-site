@@ -2,6 +2,9 @@ import React from 'react';
 import styled from 'styled-components';
 
 import { Link } from '@reach/router';
+
+import numeral from 'numeral';
+
 import { urlPrefix } from '../../../../data';
 
 const LinkWrap = styled.span`
@@ -87,7 +90,7 @@ export default (props) => {
           <PriceWrapper>
             <div>
               <p class="p-0 m-0"><small>Price starts from</small></p>
-              <Price>{props.item.price_starts}</Price>
+              <Price>{numeral(props.item.price_starts).format('0,0')}</Price>
             </div>
             <div>
               <Link key={props.item.code} to={`/${urlPrefix}/${props.item.slug}`} className="btn btn-outline-info align-right btn-sm">

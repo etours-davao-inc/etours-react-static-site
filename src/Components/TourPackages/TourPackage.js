@@ -2,6 +2,8 @@ import React from 'react';
 import styled from 'styled-components';
 import { Link } from '@reach/router';
 
+import numeral from 'numeral';
+
 import { urlPrefix } from '../../../data';
 
 const H3 = styled.h3`
@@ -44,11 +46,13 @@ const Price = styled.p`
   }
   font-size: 1.3rem;
   color: #2ecc71;
+  text-align: right;
 `
 
 const PriceStarts = styled.span`
   color: #c0392b;
   font-size: .9rem;
+
 `
 
 export default (props) => {
@@ -65,7 +69,7 @@ export default (props) => {
           <Link to={`/${urlPrefix}/${props.data.slug}`} className="btn btn-warning">View details</Link>
           <PriceWrapper>
             <PriceStarts>Price starts from</PriceStarts>
-            <Price>{props.data.price_starts}</Price>
+            <Price>{numeral(props.data.price_starts).format('0,0')}</Price>
           </PriceWrapper>
         </FooterWrap>
 
