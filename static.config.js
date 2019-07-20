@@ -2,6 +2,8 @@ import React from 'react';
 import path from 'path'
 import { dataSource, urlPrefix } from './data';
 
+import { format } from 'date-fns';
+
 export default {
   // siteRoot: 'https://www.etours.ph',
   minLoadTime: 2000,
@@ -20,7 +22,8 @@ export default {
           path: `/${urlPrefix}/${tourpackage.slug}`,
           template: 'src/Components/TourPackage',
           getData: () => ({
-            tourpackage
+            tourpackage: tourpackage,
+            lastUpdate: format(new Date(), 'MMMM DD, YYYY')
           })
         })),
       },

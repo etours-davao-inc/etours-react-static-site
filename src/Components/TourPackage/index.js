@@ -36,7 +36,7 @@ const TourPackage = props => {
         <meta name="keywords" content={props.tourpackage.metakeywords} />
       </Head>  
       <TourPackageWrapper>
-        <TourPackageInfo data={props.tourpackage} />
+        <TourPackageInfo data={props.tourpackage} lastUpdate={props.lastUpdate} />
         <BookingForm data={props.tourpackage} />
       </TourPackageWrapper>
     </React.Fragment>
