@@ -65,6 +65,9 @@ export default () => {
           if (userInput.hasOwnProperty('hotel')) {
             code = userInput.hotel.code
           }
+          const hotels = data.hotels.sort((a,b) => {
+            return  a.price - b.price
+          })
           return (
             <span>
               <ScrolledYWrapper>
@@ -74,7 +77,7 @@ export default () => {
                   onClick={() => actions.hotelClick(noHotel)}
                   onTouchStart={() => actions.hotelClick(noHotel)}>
                   Tour only (No hotel)</NoHotelWrapper>
-                {data.hotels.map((hotel, index) => {
+                {hotels.map((hotel, index) => {
                   return (
                     <Hotel
                       data={hotel}
