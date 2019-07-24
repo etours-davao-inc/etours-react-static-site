@@ -8400,7 +8400,7 @@ toposort@^1.0.0:
   resolved "https://registry.yarnpkg.com/toposort/-/toposort-1.0.7.tgz#2e68442d9f64ec720b8cc89e6443ac6caa950029"
   integrity sha1-LmhELZ9k7HILjMieZEOsbKqVACk=
 
-"tour-dates-utility@file:../tour-dates-utility":
+tour-dates-utility@/Users/t0mclaudio/Documents/Projects/etours-website/tour-dates-utility:
   version "0.1.0"
   dependencies:
     date-fns "^1.30.1"
