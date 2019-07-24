@@ -1,11 +1,12 @@
 import React, { Component } from 'react';
 
 import isEmail from 'validator/lib/isEmail';
+import { format } from 'date-fns';
 
 import { Calculate } from 'price-compute-js';
 import postReservation  from './postReservation';
 
-import { initDayRangeValues, setDayRange, getStartDate } from 'tour-dates-utility';
+import { initDayRangeValues, setDayRange, getStartDate, setOptionPaymentDate } from 'tour-dates-utility';
 import { DayTour, MultiDay, MultiDayWithHotel } from './Modules';
 
 const BookingContext = React.createContext();
@@ -78,9 +79,17 @@ export class Provider extends Component {
     if (this.state.data.type === "multiday") {
       let { from, to, days, maxDays, nights, hotelNights } = initDayRangeValues(today, duration, startday, offsetnights, limitdays)
       userInput.tourDates = { from: from, to: to, days: days, nights: nights, hotelNights: hotelNights }
+      setOptionPaymentDate(today, from)
+      .then(optionDate => {
+        userInput.tourDates.optionDate = optionDate
+      })
       this.setState({ userInput: userInput, disabledDaysBefore: from, minDays: duration, maxDays: maxDays, isRange: true, })
     } else {
       userInput.tourDate = getStartDate(today, startday)
+      setOptionPaymentDate(userInput.inquiryDate, userInput.tourDate)
+      .then(optionDate => {
+        userInput.optionDate = optionDate
+      })
       this.setState({ userInput: userInput, disabledDaysBefore: userInput.tourDate })
     }
   }
@@ -127,11 +136,19 @@ export class Provider extends Component {
   clickNewDate(date) {
     let userInput = this.state.userInput
     userInput.tourDate = date;
+    setOptionPaymentDate(userInput.inquiryDate, date).then(optionDate => {
+      userInput.optionDate = optionDate;
+    })
     this.setState({ userInput: userInput })
   }
 
   clickDayRange(date) {
     let updatedState = setDayRange(this.state, date)
+    let today = updatedState.userInput.inquiryDate
+    let from = updatedState.userInput.tourDates.from
+    setOptionPaymentDate(today, from).then(optionDate => {
+      updatedState.userInput.tourDates.optionDate = optionDate;
+    })
     this.setState(updatedState)
   }
 
