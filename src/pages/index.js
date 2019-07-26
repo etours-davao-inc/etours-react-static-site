@@ -12,7 +12,6 @@ import data from '../data';
 import ResponsiveWidth from '../Components/Home/ResponsiveWidth';
 
 export default withRouteData(props => {
-  window.scrollTo(0,0);
   return (
     <React.Fragment>
       <Head>

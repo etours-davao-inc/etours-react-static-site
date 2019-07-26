@@ -1,7 +1,6 @@
 import React from 'react';
 
 export default (props) => {
-  window.scrollTo(0,0);
   return (
     <div className="responsive-widths my-2 p-2 bg-white rounded">
     <h1 className="chilean-fire">Privacy Notice</h1>
