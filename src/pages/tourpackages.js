@@ -35,6 +35,7 @@ color: #3498db;
 
 export default withRouteData((props) => {
   let found = props.tourpackages.length
+  window.scrollTo(0,0);
   return (
     <React.Fragment>
       <Banner />

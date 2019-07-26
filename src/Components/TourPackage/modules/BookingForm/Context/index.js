@@ -58,6 +58,10 @@ export class Provider extends Component {
 
   }
 
+  componentDidMount() {
+    window.scrollTo(0,0)
+  }
+
   loadProperModules() {
     let tourType = this.state.data.type
     let withHotels = this.state.data.hotels !== undefined
