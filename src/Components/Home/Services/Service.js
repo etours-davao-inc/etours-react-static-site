@@ -83,9 +83,9 @@ export default (props) => {
       <div className="header">
         <H2>{props.item.title}</H2>
         <Description>{props.item.description}</Description>
-        <Button>
+        {/* <Button>
           <a href="#" className="btn btn-warning">Know more</a>
-        </Button>
+        </Button> */}
         
       </div>
     </ServiceWrapper>
