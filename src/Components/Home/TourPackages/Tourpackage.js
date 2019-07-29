@@ -16,8 +16,6 @@ const BannerImage = styled.div`
   background-repeat: no-repeat;
   background-size: cover;
   background-image: ${props => props.img};
-  border-top-left-radius: 4px;
-  border-top-right-radius: 4px;
 `
 
 const PackageName = styled.h3`
@@ -82,7 +80,7 @@ export default (props) => {
   let ribbonColor = isMultiDayTour ? "#e74c3c":"#9b59b6";
   return (
     <LinkWrap>
-      <div className="d-block mx-1 rounded tourpackage-link bg-white">
+      <div className="d-block bg-white">
         <Ribbon ribbonColor={ribbonColor}><span>{props.item.duration_text}</span></Ribbon>
         <BannerImage img={image} />
         <div className="p-2 d-flex flex-wrap align-content-between" style={{ minHeight: '115px' }}>
