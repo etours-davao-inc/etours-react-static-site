@@ -7,7 +7,7 @@ const BannerWrapper = styled.section`
   background-repeat: no-repeat;
   background-size: cover;
   max-width: 1280px;
-  margin: 0 auto;
+  margin: 15px auto;
   border-radius: 4px;
 
   h2 {
