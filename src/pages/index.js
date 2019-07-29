@@ -20,9 +20,7 @@ export default withRouteData(props => {
       </Head>
       <span>
         <video controls="controls" loop="loop" poster="" style={{width: '100%', height: 'auto'}}>
-          <source src="https://res.cloudinary.com/etours-davao-inc/video/upload/v1564382116/Etours_Kadayawan_Cover_Video_2019.webm" type="video/webm" />
           <source src="https://res.cloudinary.com/etours-davao-inc/video/upload/v1564382116/Etours_Kadayawan_Cover_Video_2019.mp4" type="video/mp4" />
-          <source src="https://res.cloudinary.com/etours-davao-inc/video/upload/v1564382116/Etours_Kadayawan_Cover_Video_2019.ogv" type="video/ogg" />
           Your browser does not support playing video content.
         </video>
         <ResponsiveWidth>
