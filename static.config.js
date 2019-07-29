@@ -5,8 +5,8 @@ import { dataSource, urlPrefix } from './data';
 import { format } from 'date-fns';
 
 export default {
-  // siteRoot: 'https://www.etours.ph',
-  minLoadTime: 2000,
+  siteRoot: 'https://www.etours.ph',
+  minLoadTime: 2500,
   getRoutes: async () => {
     var tourpackages = require(dataSource)
     tourpackages = tourpackages.sort((a, b) => {
