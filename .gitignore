@@ -5,7 +5,7 @@
 /coverage
 
 # production
-/dist
+
 /tmp
 
 #user files
