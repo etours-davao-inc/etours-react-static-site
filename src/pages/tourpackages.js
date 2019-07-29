@@ -10,7 +10,7 @@ import TourPackages from '../Components/TourPackages';
 
 const H1 = styled.h1`
   font-family: 'Gotham Bold',Impact, 'Haettenschweiler', 'Arial Narrow Bold', sans-serif;
-  font-size: 2.5rem;
+  font-size: 1.8rem;
   padding-top: 1rem;
   padding-bottom: 1rem;
   color: #e67e22;
