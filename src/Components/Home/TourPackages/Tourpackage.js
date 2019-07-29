@@ -77,7 +77,7 @@ const Ribbon = styled.div`
 `
 
 export default (props) => {
-  let image = `url(http://res.cloudinary.com/etours-davao-inc/image/upload/w_288/${props.item.photo})`
+  let image = `url(http://res.cloudinary.com/etours-davao-inc/image/upload/w_488/${props.item.photo})`
   let isMultiDayTour = props.item.type === "multiday";
   let ribbonColor = isMultiDayTour ? "#e74c3c":"#9b59b6";
   return (
