@@ -1,5 +1,5 @@
 import React from 'react';
-import { withRouteData } from 'react-static';
+import { Head, withRouteData } from 'react-static';
 
 import styled from 'styled-components';
 
@@ -37,13 +37,17 @@ export default withRouteData((props) => {
   let found = props.tourpackages.length
   return (
     <React.Fragment>
+      <Head>
+        <title>Philippine Tour Packages | Davao Tours 2019-2020</title>
+        <meta name="description" content="Davao and Samal day tour activities and multiday tour packages" />
+      </Head>
       <Banner />
       <ResponsiveWidths>
         <H1>Tour packages</H1>
         <FoundText>{found} tour packages found</FoundText>
         <TourPackages tourpackages={props.tourpackages} />
       </ResponsiveWidths>
-    </React.Fragment>   
+    </React.Fragment>
   )
 })
 
