@@ -11,10 +11,7 @@ const RightAside = props => {
             <div id="contact_information_wrapper">
                 <h3 className="content_headers">Contact us</h3>
                 <ul className="contact_item_list">
-                    <li className="contact_item"><a href="tel:+639228674779">+63 922 867 4779 (Sun)</a></li>
-                    <li className="contact_item"><a href="tel:+639498271748">+63 949 827 1748 (Smart)</a></li>
                     <li className="contact_item"><a href="tel:+639778344716">+63 977 834 4716 (Globe)</a></li>
-                    <li className="contact_item"><a href="tel:+6329386372">+63 2 938 6372 (Manila Landline)</a></li>
                     <li className="contact_item"><a href="tel:+63822841760">+63 82 284 1760 (Davao Landline)</a></li>
                 </ul>
                 <h3 className="content_headers">Email</h3>

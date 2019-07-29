@@ -16,7 +16,7 @@ export default (props) => {
         <p>www.instagram.com/etours.ph</p>
         <i className="fab fa-linkedin fa-3x mt-2" style={{color: '#0652DD'}}></i>
         <p>ph.linkedin/in/etours-davao</p>
-        <img className="d-block mx-auto" src="http://res.cloudinary.com/etours-davao-inc/image/upload/v1549434882/etours-logo.png" />
+        <img className="d-block mx-auto" src="https://res.cloudinary.com/etours-davao-inc/image/upload/v1549434882/etours-logo.png" />
         <p className="h3">www.etours.ph</p>
         <p>info@etours.ph</p>
       </div>

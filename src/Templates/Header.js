@@ -18,7 +18,7 @@ const Header = props => {
                 </div>
                 </div>
                 <Link to="/">
-                <img id="etours-logo" className="center-block" src="http://res.cloudinary.com/etours-davao-inc/image/upload/c_scale,w_125/v1478855681/EtoursLogo_t2euyl.png" />
+                <img id="etours-logo" className="center-block" src="https://res.cloudinary.com/etours-davao-inc/image/upload/c_scale,w_125/v1478855681/EtoursLogo_t2euyl.png" />
                 </Link>
                 <div>
                 <a className="nav-link dropdown-toggle" data-toggle="dropdown" href="#"><i className="fas fa-phone"></i></a>

@@ -21,7 +21,7 @@ export default (props) => {
       <p><strong>Responsive </strong> - We understand that you are busy - that is why we put in the effort to respond to your needs in a timely manner and as efficiently as possible.</p>
       <p><strong>Professional&nbsp;</strong>-We understand that you want to be treated as a valued customer and we make sure that you get the treatment of a valued customer.</p>
     </div>  
-      <img src="http://res.cloudinary.com/etours-davao-inc/image/upload/c_mfit,e_art:ukulele,g_center,q_100,w_720/v1549428954/etours-davao-production-team-2016.jpg" alt="Etours production team on a break during hassle free shoot " width={720} height={540} className="d-block mx-auto mb-5 rounded img-fluid"/>
+      <img src="https://res.cloudinary.com/etours-davao-inc/image/upload/c_mfit,e_art:ukulele,g_center,q_100,w_720/v1549428954/etours-davao-production-team-2016.jpg" alt="Etours production team on a break during hassle free shoot " width={720} height={540} className="d-block mx-auto mb-5 rounded img-fluid"/>
       <h2 className="h4 chilean-fire">About Etours</h2>
       <p>Etours was founded in 2009 as an educational tour organiser for schools - we think that educational tours and supplemental activities like seminars, bootcamps, workshops complements lessons taught inside the classroom.</p>
       <p>Etours was founded in 2009 as an educational tour organiser for schools - we think that educational tours and supplemental activities like seminars, bootcamps, workshops complements lessons taught inside the classroom.</p>

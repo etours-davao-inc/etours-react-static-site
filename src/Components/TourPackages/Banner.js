@@ -17,7 +17,7 @@ const Img = styled.img`
 export default () => {
   return (
     <Section>
-      <Img src="http://res.cloudinary.com/etours-davao-inc/image/upload/w_600/v1489730145/etours-davao-philippines-hassle-free-travel_lqsg2k.png" />
+      <Img src="https://res.cloudinary.com/etours-davao-inc/image/upload/w_600/v1489730145/etours-davao-philippines-hassle-free-travel_lqsg2k.png" />
     </Section>
   )
 }
