@@ -37,7 +37,7 @@ const Header = props => {
                         <p>www.instagram.com/etours.ph</p>
                         <i className="fab fa-linkedin fa-2x" style={{color: '#0652DD'}}></i>
                         <p>ph.linkedin/in/etours-davao</p>
-                        <img className="d-block mx-auto" src="http://res.cloudinary.com/etours-davao-inc/image/upload/w_30/v1549434882/etours-logo.png" />
+                        <img className="d-block mx-auto" src="https://res.cloudinary.com/etours-davao-inc/image/upload/w_30/v1549434882/etours-logo.png" />
                         <p>info@etours.ph</p>
                     </div>
                     </div>
