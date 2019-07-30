@@ -28,7 +28,7 @@ export default {
         })),
       },
       {
-        path: '/tourpackages',
+        path: '/philippine-tours/davao-city-tourpackages',
         getData: () => ({
           tourpackages,
         })
