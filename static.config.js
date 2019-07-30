@@ -27,7 +27,8 @@ export default {
         })),
       },
       {
-        path: '/tourpackages',
+        path: '/philippine-tours-2019-2020/davao-tourpackages',
+        template: 'src/Components/TourPackages',
         getData: () => ({
           tourpackages,
         })

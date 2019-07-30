@@ -10,8 +10,8 @@ const Header = props => {
                 <div>
                 <a className="nav-link dropdown-toggle" data-toggle="dropdown" href="#"><i className="fas fa-bars"></i></a>
                 <div className="dropdown-menu align-right w-100">
-                    <Link className="dropdown-item border-bottom" to="/">Services</Link>
-                    <Link className="dropdown-item border-bottom" to={'/tourpackages'}>Tour Packages</Link>
+                    {/* <Link className="dropdown-item border-bottom" to="/">Services</Link> */}
+                    <Link className="dropdown-item border-bottom" to={'/philippine-tours-2019-2020/davao-tourpackages'}>Davao Tourpackages</Link>
                     <Link className="dropdown-item border-bottom" to={'/about-us'}>Company Profile</Link>
                     <Link className="dropdown-item border-bottom" to={'/contact-us'}>Contact Us</Link>
                     <Link className="dropdown-item" to={'/privacy-policy'}>Privacy Policy</Link>
