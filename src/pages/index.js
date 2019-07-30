@@ -23,9 +23,16 @@ export default withRouteData(props => {
       </Head>
       <span className="d-block mt-3">
         <ResponsiveWidth>
-          <video controls="controls" loop="loop" style={{ width: '100%', height: 'auto' }} autoPlay="autoplay" playsInline="playsinline">
-            <source src="https://res.cloudinary.com/etours-davao-inc/video/upload/v1564382116/Etours_Kadayawan_Cover_Video_2019.mp4" type="video/mp4" />
-            Your browser does not support playing video content.
+          <video 
+            controls="controls" 
+            loop="loop" 
+            style={{ width: '100%', height: 'auto' }} 
+            autoPlay="autoplay" 
+            playsInline="playsinline"
+            poster="https://res.cloudinary.com/etours-davao-inc/image/upload/v1564466982/etours-davao-kadayawan-banner-2019.jpg"
+            >
+              <source src="https://res.cloudinary.com/etours-davao-inc/video/upload/v1564382116/Etours_Kadayawan_Cover_Video_2019.mp4" type="video/mp4" />
+              Your browser does not support playing video content.
           </video>
           <TourPackages data={props.tourpackages} settings={data} />
           <Banner text={data.Header.bannerText} />
