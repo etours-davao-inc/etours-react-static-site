@@ -35,6 +35,9 @@ color: #3498db;
 
 export default withRouteData((props) => {
   let found = props.tourpackages.length
+  if (typeof window !== 'undefined') {
+    window.scrollTo(0,0)
+  }
   return (
     <React.Fragment>
       <Head>

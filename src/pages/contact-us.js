@@ -1,6 +1,9 @@
 import React from 'react';
 
 export default (props) => {
+  if (typeof window !== 'undefined') {
+    window.scrollTo(0,0)
+  }
   return (
     <div className="responsive-widths bg-white my-2 p-2">
       <div className="text-center">

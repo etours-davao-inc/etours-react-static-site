@@ -1,6 +1,9 @@
 import React from 'react';
 
 export default (props) => {
+  if (typeof window !== 'undefined') {
+    window.scrollTo(0,0)
+  }
   return (
     <div className="responsive-widths my-2 bg-white p-2">
       <h1 className="h2 chilean-fire d-none">Etours Company Profile</h1>
