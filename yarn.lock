@@ -7039,6 +7039,13 @@ react-lifecycles-compat@^3.0.4:
   resolved "https://registry.yarnpkg.com/react-lifecycles-compat/-/react-lifecycles-compat-3.0.4.tgz#4f1a273afdfc8f3488a8c516bfda78f872352362"
   integrity sha512-fBASbA6LnOU9dOU2eW7aQ8xmYBSXUIWr+UmF9b1efZBazGNO+rcXT/icdKnYm2pTwcRylVUYwW7H1PHfLekVzA==
 
+react-messenger-customer-chat@^0.7.2:
+  version "0.7.2"
+  resolved "https://registry.yarnpkg.com/react-messenger-customer-chat/-/react-messenger-customer-chat-0.7.2.tgz#922aad45de0d6798dc549cfaf7aac2d907dbb395"
+  integrity sha512-loib6j9HHIx7XO4SrygYMSVFmXnbf47nqOBORC2+RRSU6Oj7OLNlsVYm3Bp286mRs8r4beLCB76RNoQXqiZpYQ==
+  dependencies:
+    prop-types "^15.6.0"
+
 react-responsive@^7.0.0:
   version "7.0.0"
   resolved "https://registry.yarnpkg.com/react-responsive/-/react-responsive-7.0.0.tgz#0abde0ccbb50e5e8407e3d61dd4696447e7ebd3c"
@@ -8400,7 +8407,7 @@ toposort@^1.0.0:
   resolved "https://registry.yarnpkg.com/toposort/-/toposort-1.0.7.tgz#2e68442d9f64ec720b8cc89e6443ac6caa950029"
   integrity sha1-LmhELZ9k7HILjMieZEOsbKqVACk=
 
-tour-dates-utility@/Users/t0mclaudio/Documents/Projects/etours-website/tour-dates-utility:
+"tour-dates-utility@file:../tour-dates-utility":
   version "0.1.0"
   dependencies:
     date-fns "^1.30.1"
