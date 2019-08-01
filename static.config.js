@@ -45,8 +45,6 @@ export default {
     let googleTracker = () => {
       if (process.env.NODE_ENV === 'development') {
         return `console.log('Dev Mode')`
-      } else if (process.env.NODE_ENV === 'staging') {
-        return `console.log('Staging Mode')`
       } else {
         return `
           (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
