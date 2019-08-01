@@ -36,7 +36,7 @@ export default {
       },
       {
         path: '404',
-        template: 'src/Components/404.js'
+        template: 'src/Components/404'
       }
       
     ]
