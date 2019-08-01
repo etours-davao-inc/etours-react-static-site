@@ -34,6 +34,10 @@ export default {
           tourpackages,
         })
       },
+      {
+        path: '404',
+        template: 'src/Components/404.js'
+      }
       
     ]
   },
