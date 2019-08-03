@@ -15,17 +15,6 @@ const H1 = styled.h1`
   padding-bottom: 1rem;
   color: #e67e22;
 `
-
-const ResponsiveWidths = styled.section`
-  width:100%;
-  margin: 0 auto;
- 
-  @media (min-width: 992px) { 
-      min-width:768px;
-      max-width: 800px;
-  }
-`
-
 const FoundText = styled.p`
 width: 100%;
 text-align: right;
@@ -45,13 +34,13 @@ export default withRouteData((props) => {
         <meta name="description" content="Davao and Samal day tour activities and multiday tour packages" />
       </Head>
       <Banner />
-      <ResponsiveWidths>
+      <div className="responsive-widths">
         <H1>Tour packages</H1>
         <FoundText>{found} tour packages found</FoundText>
         {props.tourpackages.map((item, index) => {
           return <TourPackage data={item} key={item.code} />
         })}   
-      </ResponsiveWidths>
+      </div>
     </React.Fragment>
   )
 })
