@@ -5,13 +5,14 @@ import './Templates/css/base.css';
 
 import Footer from './Templates/Footer';
 import Header from './Templates/Header';
+import Loader from './Templates/Loader';
 
 class App extends Component {
   render() {
     return (
       <Root>
         <Header />
-        <React.Suspense fallback={<em>Loading...</em>}>
+        <React.Suspense fallback={<Loader />}>
           <Routes />
         </React.Suspense>
         <Footer />
