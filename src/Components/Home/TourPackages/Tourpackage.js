@@ -75,14 +75,16 @@ const Ribbon = styled.div`
 `
 
 export default (props) => {
-  let image = `url(https://res.cloudinary.com/etours-davao-inc/image/upload/w_488/${props.item.photo})`
   let isMultiDayTour = props.item.type === "multiday";
   let ribbonColor = isMultiDayTour ? "#e74c3c":"#9b59b6";
   return (
     <LinkWrap>
       <div className="d-block bg-white">
         <Ribbon ribbonColor={ribbonColor}><span>{props.item.duration_text}</span></Ribbon>
-        <BannerImage img={image} />
+        <img
+          className="img-fluid"
+          alt="davao philippines tour"
+          src={`https://res.cloudinary.com/etours-davao/image/upload/c_scale,w_488,fl_progressive/v1564818805/${props.item.photo}`} />
         <div className="p-2 d-flex flex-wrap align-content-between" style={{ minHeight: '115px' }}>
           <PackageName className="dragon-skin">{props.item.name}</PackageName>
           <PriceWrapper>
@@ -91,7 +93,7 @@ export default (props) => {
               <Price>{numeral(props.item.price_starts).format('0,0')}</Price>
             </div>
             <div>
-              <Link key={props.item.code} to={`/${urlPrefix}/${props.item.slug}`} className="btn btn-outline-info align-right btn-sm">
+              <Link key={props.item.code} to={`/${urlPrefix}/${props.item.slug}`} className="btn btn-info align-right btn-sm">
               View details</Link>
             </div>
           
