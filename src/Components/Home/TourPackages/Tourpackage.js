@@ -11,13 +11,6 @@ const LinkWrap = styled.span`
   position: relative;
 `
 
-const BannerImage = styled.div`
-  padding-top: 66.66%;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-image: ${props => props.img};
-`
-
 const PackageName = styled.h3`
   color: #ff9f43;
   font-family: 'Gotham Bold',Impact, 'Haettenschweiler', 'Arial Narrow Bold', sans-serif;
