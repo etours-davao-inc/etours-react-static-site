@@ -14,11 +14,28 @@
 }
 
 /* Extra small devices (portrait phones, less than 576px) */
+  html, body {
+    height: 100%;
+  }
+
   body {
     font-family: 'Gotham Rounded Book', Arial, Helvetica, sans-serif;
     background-color:#F5D76E; 
     color: #484848;
   }
+
+  #root, #root > div {
+    height: 100%;
+  }
+
+  #root > div {
+    width: 100%;
+    min-height: 100%;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    grid-template-columns: 100%;
+  }
+
   .responsive-widths {
     width:100%;
     margin: 0 auto;
@@ -81,7 +98,8 @@
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) { 
   .responsive-widths {
-    width:75%;
+    min-width:768px;
+    max-width: 992px;
   }
 }
  
