@@ -2,8 +2,12 @@ import React from 'react';
 import styled from 'styled-components';
 import { Consumer } from './Context';
 
+import numeral from 'numeral';
+
 import { ButtonGroup, Button } from '../../../Buttons';
 import ScrolledYWrapper from './ScrolledYWrapper';
+
+
 
 const NoHotelWrapper = styled.div`
   margin-bottom: .5rem;
@@ -39,19 +43,19 @@ const HotelWrapper = styled.div`
 `
 
 const HotelName = styled.p`
-  font-size: 12px;
+  font-size: 14px;
   line-height: 1rem;
   padding-top: 4px;
   margin-bottom:0px;
 `
 
 const PriceLabel = styled.span`
-  font-size: 11px;
+  font-size: 14px;
   color: #c0392b;
 `
 
 const Image = styled.img`
-  width: 115px;
+  width: 95px;
   border-radius: 1px;
 `
 
@@ -76,11 +80,14 @@ export default () => {
                   selected={code === ""}
                   onClick={() => actions.hotelClick(noHotel)}
                   onTouchStart={() => actions.hotelClick(noHotel)}>
-                  Tour only (No hotel)</NoHotelWrapper>
+                  <HotelName>Tour only (No hotel)</HotelName>
+                  <PriceLabel>Php {numeral(userInput.adults[1]).format('0,0')}/person</PriceLabel>
+                  </NoHotelWrapper>
                 {hotels.map((hotel, index) => {
                   return (
                     <Hotel
                       data={hotel}
+                      userInput={userInput}
                       nights={userInput.tourDates.hotelNights}
                       key={index}
                       selected={code === hotel.code}
@@ -106,12 +113,15 @@ const Hotel = props => {
   let payload = Object.assign({},props.data) // clone data object
   delete payload.photo 
   let nights = props.nights > 1 ? 'nights' : 'night'
+  let adultPrice = (props.nights * props.data.price) + props.userInput.adults[1]
   return (
     <HotelWrapper onClick={()=>props.onClick(payload)} selected={props.selected}>
       <Image src={props.data.photo} />
       <div>
         <HotelName>{props.data.name}</HotelName>
-        <PriceLabel>Php {props.data.price}/night for {props.nights} {nights}</PriceLabel>
+        <PriceLabel>
+          Php {numeral(adultPrice).format('0,0')}/person
+        </PriceLabel>
       </div>
     </HotelWrapper>
   )
