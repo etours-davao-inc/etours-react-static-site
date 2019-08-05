@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[4],{58:function(e,n,t){"use strict";t.r(n);var s=t(0),a=t.n(s);n.default=function(){return a.a.createElement("div",{className:"responsive-widths my-2 rounded d-flex justify-content-center align-items-center"},a.a.createElement("h1",null,"Page does not exit..."))}}}]);
