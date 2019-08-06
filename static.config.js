@@ -1,7 +1,6 @@
 import React from 'react';
 import path from 'path'
 import { dataSource, urlPrefix } from './data';
-import MessengerCustomerChat from 'react-messenger-customer-chat';
 
 import { format } from 'date-fns';
 export default {
@@ -68,12 +67,10 @@ export default {
           <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossOrigin="anonymous" />
         </Head>
         <Body>
-          <MessengerCustomerChat
-            pageId="229913515288"
-            appID=""
-          />
           {children}
           <div id="modal"></div>
+          <div class="elfsight-app-bd1319b2-c0ce-4ef5-a31b-c16a170445b5"></div>
+          <script src="https://apps.elfsight.com/p/platform.js" defer></script>
           <script dangerouslySetInnerHTML={{ __html: googleTracker() }}></script>
           <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossOrigin="anonymous"></script>
           <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossOrigin="anonymous"></script>
