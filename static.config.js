@@ -70,7 +70,7 @@ export default {
         <Body>
           <MessengerCustomerChat
             pageId="229913515288"
-            appId="729113564186331"
+            appID=""
           />
           {children}
           <div id="modal"></div>
