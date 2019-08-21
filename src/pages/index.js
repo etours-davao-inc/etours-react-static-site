@@ -35,13 +35,10 @@ export default withRouteData(props => {
           </video>
          
           <TourPackages data={props.tourpackages} settings={data} />
-          <div className="elfsight-app-6a6e83b3-35bf-4792-8825-06b4159e3387"></div>
-          <div className="elfsight-app-fe783a16-dc28-4c3e-8056-084d1a5b4b81"></div>
           <Banner text={data.Header.bannerText} />
           <Services data={data} />
           <Values data={data.Values} />
           <About />
-          <div class="elfsight-app-703528fa-679e-43bb-b4b9-2e3716be6753"></div>
         </div>
       </span>
     </React.Fragment >
