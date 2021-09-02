@@ -10,7 +10,7 @@
     "serve": "serve dist -p 3000"
   },
   "dependencies": {
-    "axios": "^0.19.0",
+    "axios": "^0.21.1",
     "cloudinary-react": "^1.1.1",
     "date-fns": "^1.30.1",
     "firebase-etours-booking-crud": "/Users/t0mclaudio/Documents/Projects/etours-website/firebase-etours-booking-crud",
