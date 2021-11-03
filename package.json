@@ -31,7 +31,7 @@
     "slick-carousel": "^1.8.1",
     "styled-components": "^4.3.2",
     "tour-dates-utility": "/Users/t0mclaudio/Documents/Projects/etours-website/tour-dates-utility",
-    "validator": "^11.0.0"
+    "validator": "^13.7.0"
   },
   "devDependencies": {
     "eslint-config-react-tools": "^1.1.7",
